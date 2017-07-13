@@ -15,6 +15,7 @@
 		E8D374741F1746BA0040B541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D374721F1746BA0040B541 /* LaunchScreen.storyboard */; };
 		E8D3747F1F1746BA0040B541 /* swift519Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D3747E1F1746BA0040B541 /* swift519Tests.swift */; };
 		E8D3748A1F1746BA0040B541 /* swift519UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D374891F1746BA0040B541 /* swift519UITests.swift */; };
+		E8D3749A1F1798E30040B541 /* LPTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D374991F1798E30040B541 /* LPTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E8D374851F1746BA0040B541 /* swift519UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift519UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D374891F1746BA0040B541 /* swift519UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift519UITests.swift; sourceTree = "<group>"; };
 		E8D3748B1F1746BA0040B541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D374991F1798E30040B541 /* LPTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		E8D374681F1746BA0040B541 /* swift519 */ = {
 			isa = PBXGroup;
 			children = (
+				E8D374971F1798840040B541 /* Classes */,
 				E8D374691F1746BA0040B541 /* AppDelegate.swift */,
 				E8D3746B1F1746BA0040B541 /* ViewController.swift */,
 				E8D3746D1F1746BA0040B541 /* Main.storyboard */,
@@ -139,6 +142,22 @@
 				E8D3748B1F1746BA0040B541 /* Info.plist */,
 			);
 			path = swift519UITests;
+			sourceTree = "<group>";
+		};
+		E8D374971F1798840040B541 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E8D374981F1798AE0040B541 /* BaseController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E8D374981F1798AE0040B541 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				E8D374991F1798E30040B541 /* LPTabBarViewController.swift */,
+			);
+			path = BaseController;
 			sourceTree = "<group>";
 		};
 		ECB0C85F483E7A292EFC9D1E /* Frameworks */ = {
@@ -214,6 +233,7 @@
 		E8D3745E1F1746BA0040B541 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LP;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "李鹏";
@@ -335,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8D3746C1F1746BA0040B541 /* ViewController.swift in Sources */,
+				E8D3749A1F1798E30040B541 /* LPTabBarViewController.swift in Sources */,
 				E8D3746A1F1746BA0040B541 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +605,7 @@
 				E8D374901F1746BA0040B541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8D374911F1746BA0040B541 /* Build configuration list for PBXNativeTarget "swift519Tests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +614,7 @@
 				E8D374931F1746BA0040B541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8D374941F1746BA0040B541 /* Build configuration list for PBXNativeTarget "swift519UITests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +623,7 @@
 				E8D374961F1746BA0040B541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

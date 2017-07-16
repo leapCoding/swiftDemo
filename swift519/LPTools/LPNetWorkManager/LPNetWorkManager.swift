@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 public class LPNetModel : NSObject {
     
@@ -39,7 +40,16 @@ public class LPNetWork : NSObject {
      *   - success: 成功回调
      *   - fail: 失败回调
      */
-//    public class func GET(netModel:LPNetWork, success@escaping SuccessClosure, fail:@escaping FailClosure) {
-//        
-//    }
+    public class func GET(netModel:LPNetModel, success:@escaping SuccessClosure, fail:@escaping FailClosure) {
+        Alamofire.request(netModel.url!, method: .get, parameters: netModel.paramers, encoding: URLEncoding.default, headers: netModel.headers).responseJSON { (response) in
+            if response.result.isSuccess {
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    if netModel.dataClass != nil {
+                        
+                    }
+                }
+            }
+        }
+    }
 }

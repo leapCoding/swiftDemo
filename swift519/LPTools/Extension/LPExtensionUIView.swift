@@ -36,6 +36,18 @@ extension UIView {
         return nil
     }
     
+    class func loadNib() -> UINib {
+        return loadNibNamed(nibName: NSStringFromClass(self).components(separatedBy: ".").last)
+    }
+    
+    class func loadNibNamed(nibName: String!) -> UINib {
+        return loadNibNamed(nibName: nibName, bundle: nil)
+    }
+    
+    class func loadNibNamed(nibName: String!, bundle:Bundle?) -> UINib {
+        return UINib.init(nibName: nibName, bundle: bundle)
+    }
+    
     var left:CGFloat {
         return self.frame.origin.x
     }

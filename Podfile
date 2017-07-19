@@ -7,5 +7,6 @@ target "swift519" do
     pod 'Kingfisher'
     pod 'Alamofire'
     pod 'SwiftyJSON'
+    pod 'HandyJSON'
     
 end

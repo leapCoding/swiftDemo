@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CA5B3E01F19E8D500A1CBCE /* LPRootModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5B3DF1F19E8D500A1CBCE /* LPRootModel.swift */; };
 		86AB82C03BDE814C8EAA8A72 /* Pods_swift519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E95D66CAB31A0FB781A659 /* Pods_swift519.framework */; };
 		E8D3746A1F1746BA0040B541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D374691F1746BA0040B541 /* AppDelegate.swift */; };
 		E8D3746F1F1746BA0040B541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D3746D1F1746BA0040B541 /* Main.storyboard */; };
@@ -30,6 +29,12 @@
 		E8D374BA1F18A89D0040B541 /* LPMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D374B91F18A89D0040B541 /* LPMacro.swift */; };
 		E8D374C21F18B62B0040B541 /* LPExtensionLoadNetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D374C11F18B62B0040B541 /* LPExtensionLoadNetImage.swift */; };
 		E8D374C41F18C84C0040B541 /* LPNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D374C31F18C84C0040B541 /* LPNetWorkManager.swift */; };
+		E8F79A071F1C5F63006CD1F1 /* LPHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F79A061F1C5F63006CD1F1 /* LPHomeModel.swift */; };
+		E8F79A091F1DFF6F006CD1F1 /* LPHomeBrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F79A081F1DFF6F006CD1F1 /* LPHomeBrandCell.swift */; };
+		E8F79A0C1F1E2E40006CD1F1 /* LPImageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F79A0B1F1E2E40006CD1F1 /* LPImageTitleView.swift */; };
+		E8F79A0E1F1E2E8F006CD1F1 /* LPImageTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F79A0D1F1E2E8F006CD1F1 /* LPImageTitleView.xib */; };
+		E8F79A111F1F58F5006CD1F1 /* LPRemmendAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F79A0F1F1F58F5006CD1F1 /* LPRemmendAdCell.swift */; };
+		E8F79A121F1F58F5006CD1F1 /* LPRemmendAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F79A101F1F58F5006CD1F1 /* LPRemmendAdCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CA5B3DF1F19E8D500A1CBCE /* LPRootModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPRootModel.swift; sourceTree = "<group>"; };
 		12E95D66CAB31A0FB781A659 /* Pods_swift519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B8839071AA49F9914BBB49 /* Pods-swift519.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift519.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift519/Pods-swift519.release.xcconfig"; sourceTree = "<group>"; };
 		352E0C2BF2146203362263A3 /* Pods-swift519.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift519.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift519/Pods-swift519.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +85,12 @@
 		E8D374B91F18A89D0040B541 /* LPMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPMacro.swift; sourceTree = "<group>"; };
 		E8D374C11F18B62B0040B541 /* LPExtensionLoadNetImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPExtensionLoadNetImage.swift; sourceTree = "<group>"; };
 		E8D374C31F18C84C0040B541 /* LPNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPNetWorkManager.swift; sourceTree = "<group>"; };
+		E8F79A061F1C5F63006CD1F1 /* LPHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPHomeModel.swift; sourceTree = "<group>"; };
+		E8F79A081F1DFF6F006CD1F1 /* LPHomeBrandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPHomeBrandCell.swift; sourceTree = "<group>"; };
+		E8F79A0B1F1E2E40006CD1F1 /* LPImageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPImageTitleView.swift; sourceTree = "<group>"; };
+		E8F79A0D1F1E2E8F006CD1F1 /* LPImageTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPImageTitleView.xib; sourceTree = "<group>"; };
+		E8F79A0F1F1F58F5006CD1F1 /* LPRemmendAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPRemmendAdCell.swift; sourceTree = "<group>"; };
+		E8F79A101F1F58F5006CD1F1 /* LPRemmendAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPRemmendAdCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +186,7 @@
 		E8D374971F1798840040B541 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E8F79A0A1F1E2E15006CD1F1 /* CustomView */,
 				E8D3749B1F1857A70040B541 /* Home */,
 				E8D3749C1F1857A70040B541 /* Message */,
 				E8D3749D1F1857A70040B541 /* Order */,
@@ -199,6 +210,10 @@
 			children = (
 				E8D374A11F1858890040B541 /* LPHomeViewController.swift */,
 				E8D374B51F189FF80040B541 /* LPHomeAdView.swift */,
+				E8F79A061F1C5F63006CD1F1 /* LPHomeModel.swift */,
+				E8F79A081F1DFF6F006CD1F1 /* LPHomeBrandCell.swift */,
+				E8F79A0F1F1F58F5006CD1F1 /* LPRemmendAdCell.swift */,
+				E8F79A101F1F58F5006CD1F1 /* LPRemmendAdCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -269,9 +284,17 @@
 			isa = PBXGroup;
 			children = (
 				E8D374C31F18C84C0040B541 /* LPNetWorkManager.swift */,
-				0CA5B3DF1F19E8D500A1CBCE /* LPRootModel.swift */,
 			);
 			path = LPNetWorkManager;
+			sourceTree = "<group>";
+		};
+		E8F79A0A1F1E2E15006CD1F1 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				E8F79A0B1F1E2E40006CD1F1 /* LPImageTitleView.swift */,
+				E8F79A0D1F1E2E8F006CD1F1 /* LPImageTitleView.xib */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		ECB0C85F483E7A292EFC9D1E /* Frameworks */ = {
@@ -394,6 +417,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8D374741F1746BA0040B541 /* LaunchScreen.storyboard in Resources */,
+				E8F79A121F1F58F5006CD1F1 /* LPRemmendAdCell.xib in Resources */,
+				E8F79A0E1F1E2E8F006CD1F1 /* LPImageTitleView.xib in Resources */,
 				E8D374711F1746BA0040B541 /* Assets.xcassets in Resources */,
 				E8D3746F1F1746BA0040B541 /* Main.storyboard in Resources */,
 			);
@@ -468,8 +493,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CA5B3E01F19E8D500A1CBCE /* LPRootModel.swift in Sources */,
 				E8D374B41F189B4E0040B541 /* WRProxy.swift in Sources */,
+				E8F79A111F1F58F5006CD1F1 /* LPRemmendAdCell.swift in Sources */,
 				E8D374A41F1858990040B541 /* LPMessageViewController.swift in Sources */,
 				E8D374C41F18C84C0040B541 /* LPNetWorkManager.swift in Sources */,
 				E8D374B31F189B4E0040B541 /* WRCycleScrollView.swift in Sources */,
@@ -477,6 +502,7 @@
 				E8D3749A1F1798E30040B541 /* LPTabBarViewController.swift in Sources */,
 				E8D374A21F1858890040B541 /* LPHomeViewController.swift in Sources */,
 				E8D3746A1F1746BA0040B541 /* AppDelegate.swift in Sources */,
+				E8F79A091F1DFF6F006CD1F1 /* LPHomeBrandCell.swift in Sources */,
 				E8D374B21F189B4E0040B541 /* WRCycleCell.swift in Sources */,
 				E8D374C21F18B62B0040B541 /* LPExtensionLoadNetImage.swift in Sources */,
 				E8D374A01F1858580040B541 /* LPBaseViewController.swift in Sources */,
@@ -484,6 +510,8 @@
 				E8D374BA1F18A89D0040B541 /* LPMacro.swift in Sources */,
 				E8D374A61F1858A40040B541 /* LPOrderViewController.swift in Sources */,
 				E8D374B61F189FF80040B541 /* LPHomeAdView.swift in Sources */,
+				E8F79A071F1C5F63006CD1F1 /* LPHomeModel.swift in Sources */,
+				E8F79A0C1F1E2E40006CD1F1 /* LPImageTitleView.swift in Sources */,
 				E8D374A81F1858B10040B541 /* LPUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

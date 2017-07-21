@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="269" id="KGk-i7-Jjw" customClass="LPRecommendGoodCell" customModule="swift519" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="269"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="268.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热销推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czb-lf-Fn5">
+                        <rect key="frame" x="131.5" y="10" width="57.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.83137254900000002" green="0.23921568630000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1ZK-jW-LEq">
+                        <rect key="frame" x="0.0" y="37" width="320" height="231.5"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fbt-9P-6AC">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Czb-lf-Fn5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0f9-Ov-Iuj"/>
+                    <constraint firstAttribute="bottom" secondItem="1ZK-jW-LEq" secondAttribute="bottom" id="9BO-gm-r0Z"/>
+                    <constraint firstItem="Czb-lf-Fn5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="FMp-Rs-HFb"/>
+                    <constraint firstAttribute="trailing" secondItem="1ZK-jW-LEq" secondAttribute="trailing" id="Ogw-QH-Tih"/>
+                    <constraint firstItem="1ZK-jW-LEq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UHj-uq-pwV"/>
+                    <constraint firstItem="1ZK-jW-LEq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="37" id="xrv-wO-zvS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectView" destination="1ZK-jW-LEq" id="Am1-pB-zYj"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="199.5"/>
+        </tableViewCell>
+    </objects>
+</document>

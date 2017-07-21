@@ -16,6 +16,15 @@ class LPHomeViewController: LPBaseViewController, UITableViewDelegate,UITableVie
     @IBOutlet var adScrollView: WRCycleScrollView!
     @IBOutlet var brandCell: UITableViewCell!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
     fileprivate lazy var home: LPHomeModel = {
         let home = LPHomeModel()
         return home
@@ -28,15 +37,23 @@ class LPHomeViewController: LPBaseViewController, UITableViewDelegate,UITableVie
         
         configUI()
         // Do any additional setup after loading the view.
+        let test = LPTestObject()
+        test.testMethod()
+        if let md5: String = "123456".md5String() {
+            print(md5)
+        }else {
+            print("-----------no")
+        }
     }
     
     func configUI() {
         headView.backgroundColor = UIColor.red
         adScrollView.bottomViewBackgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.colorWithRGBHex(hex: 0xf5f5f5)
         tableView.backgroundColor = UIColor.colorWithRGBHex(hex: 0xf5f5f5)
-        
-//        tableView.register(LPHomeBrandCell.loadNib(), forCellReuseIdentifier: "LPHomeBrandCell")
-        tableView.register(UINib.init(nibName: "LPRemmendAdCell", bundle: nil), forCellReuseIdentifier: "LPRemmendAdCell")
+    
+        tableView.register(LPRemmendAdCell.loadNib(), forCellReuseIdentifier: LPRemmendAdCell.stringName())
+        tableView.register(LPRecommendGoodCell.loadNib(), forCellReuseIdentifier: LPRecommendGoodCell.stringName())
     }
     
     func homeData() {
@@ -61,45 +78,37 @@ class LPHomeViewController: LPBaseViewController, UITableViewDelegate,UITableVie
         return 1
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "LPHomeBrandCell", for: indexPath) as! LPHomeBrandCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: LPHomeBrandCell.stringName(), for: indexPath) as! LPHomeBrandCell
             cell.configUI(itmes: self.home.brands)
             return cell
         }else if indexPath.section == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "LPRemmendAdCell", for: indexPath) as! LPRemmendAdCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: LPRemmendAdCell.stringName(), for: indexPath) as! LPRemmendAdCell
             cell.configData(home: home)
             return cell
         }else {
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: LPRecommendGoodCell.stringName(), for: indexPath) as! LPRecommendGoodCell
+            cell.configData(items: home.recommends)
+            return cell
         }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
             return LPHomeBrandCell.cellHeight(itmes: home.brands)
         }else if indexPath.section == 1 {
-            return 100
+            return kScreenWidth * 200 / 320
         }else {
-            return 10
+            return LPRecommendGoodCell.cellHeight(items: home.recommends)
         }
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        if section == 0 {
-            return 10
-        }else {
-            return 0.1
-        }
+        return 10
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.1
     }
-    */
-
+    
 }

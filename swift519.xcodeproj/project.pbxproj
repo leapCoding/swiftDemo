@@ -35,6 +35,14 @@
 		E8F79A0E1F1E2E8F006CD1F1 /* LPImageTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F79A0D1F1E2E8F006CD1F1 /* LPImageTitleView.xib */; };
 		E8F79A111F1F58F5006CD1F1 /* LPRemmendAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F79A0F1F1F58F5006CD1F1 /* LPRemmendAdCell.swift */; };
 		E8F79A121F1F58F5006CD1F1 /* LPRemmendAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F79A101F1F58F5006CD1F1 /* LPRemmendAdCell.xib */; };
+		E8F79A151F1F868C006CD1F1 /* LPRecommendGoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F79A131F1F868C006CD1F1 /* LPRecommendGoodCell.swift */; };
+		E8F79A161F1F868C006CD1F1 /* LPRecommendGoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F79A141F1F868C006CD1F1 /* LPRecommendGoodCell.xib */; };
+		E8F79A191F20464B006CD1F1 /* LPHomeRecommedCollectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F79A171F20464B006CD1F1 /* LPHomeRecommedCollectCell.swift */; };
+		E8F79A1A1F20464B006CD1F1 /* LPHomeRecommedCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F79A181F20464B006CD1F1 /* LPHomeRecommedCollectCell.xib */; };
+		E8F79A1C1F204D1E006CD1F1 /* LPGoodListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F79A1B1F204D1E006CD1F1 /* LPGoodListViewController.swift */; };
+		E8F79A1E1F208241006CD1F1 /* LPNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F79A1D1F208241006CD1F1 /* LPNavViewController.swift */; };
+		E8F79A221F219860006CD1F1 /* LPTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F79A211F219860006CD1F1 /* LPTestObject.m */; };
+		E8F79A251F219F68006CD1F1 /* LPExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F79A241F219F68006CD1F1 /* LPExtensionString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +99,16 @@
 		E8F79A0D1F1E2E8F006CD1F1 /* LPImageTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPImageTitleView.xib; sourceTree = "<group>"; };
 		E8F79A0F1F1F58F5006CD1F1 /* LPRemmendAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPRemmendAdCell.swift; sourceTree = "<group>"; };
 		E8F79A101F1F58F5006CD1F1 /* LPRemmendAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPRemmendAdCell.xib; sourceTree = "<group>"; };
+		E8F79A131F1F868C006CD1F1 /* LPRecommendGoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPRecommendGoodCell.swift; sourceTree = "<group>"; };
+		E8F79A141F1F868C006CD1F1 /* LPRecommendGoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPRecommendGoodCell.xib; sourceTree = "<group>"; };
+		E8F79A171F20464B006CD1F1 /* LPHomeRecommedCollectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPHomeRecommedCollectCell.swift; sourceTree = "<group>"; };
+		E8F79A181F20464B006CD1F1 /* LPHomeRecommedCollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPHomeRecommedCollectCell.xib; sourceTree = "<group>"; };
+		E8F79A1B1F204D1E006CD1F1 /* LPGoodListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPGoodListViewController.swift; sourceTree = "<group>"; };
+		E8F79A1D1F208241006CD1F1 /* LPNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPNavViewController.swift; sourceTree = "<group>"; };
+		E8F79A201F219860006CD1F1 /* LPTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPTestObject.h; sourceTree = "<group>"; };
+		E8F79A211F219860006CD1F1 /* LPTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPTestObject.m; sourceTree = "<group>"; };
+		E8F79A241F219F68006CD1F1 /* LPExtensionString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPExtensionString.swift; sourceTree = "<group>"; };
+		E8F79A261F21CB18006CD1F1 /* swift519-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "swift519-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +219,7 @@
 			children = (
 				E8D374991F1798E30040B541 /* LPTabBarViewController.swift */,
 				E8D3749F1F1858580040B541 /* LPBaseViewController.swift */,
+				E8F79A1D1F208241006CD1F1 /* LPNavViewController.swift */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
@@ -214,6 +233,11 @@
 				E8F79A081F1DFF6F006CD1F1 /* LPHomeBrandCell.swift */,
 				E8F79A0F1F1F58F5006CD1F1 /* LPRemmendAdCell.swift */,
 				E8F79A101F1F58F5006CD1F1 /* LPRemmendAdCell.xib */,
+				E8F79A131F1F868C006CD1F1 /* LPRecommendGoodCell.swift */,
+				E8F79A141F1F868C006CD1F1 /* LPRecommendGoodCell.xib */,
+				E8F79A171F20464B006CD1F1 /* LPHomeRecommedCollectCell.swift */,
+				E8F79A181F20464B006CD1F1 /* LPHomeRecommedCollectCell.xib */,
+				E8F79A1B1F204D1E006CD1F1 /* LPGoodListViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -245,6 +269,7 @@
 		E8D374A91F18622D0040B541 /* LPTools */ = {
 			isa = PBXGroup;
 			children = (
+				E8F79A261F21CB18006CD1F1 /* swift519-Bridging-Header.h */,
 				E8D374BB1F18B2E00040B541 /* LPNetWorkManager */,
 				E8D374AA1F1863110040B541 /* Extension */,
 				E8D374B91F18A89D0040B541 /* LPMacro.swift */,
@@ -258,6 +283,7 @@
 				E8D374AB1F18632F0040B541 /* LPExtensionColor.swift */,
 				E8D374B71F18A2690040B541 /* LPExtensionUIView.swift */,
 				E8D374C11F18B62B0040B541 /* LPExtensionLoadNetImage.swift */,
+				E8F79A241F219F68006CD1F1 /* LPExtensionString.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -293,6 +319,8 @@
 			children = (
 				E8F79A0B1F1E2E40006CD1F1 /* LPImageTitleView.swift */,
 				E8F79A0D1F1E2E8F006CD1F1 /* LPImageTitleView.xib */,
+				E8F79A201F219860006CD1F1 /* LPTestObject.h */,
+				E8F79A211F219860006CD1F1 /* LPTestObject.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -377,6 +405,7 @@
 				TargetAttributes = {
 					E8D374651F1746BA0040B541 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					E8D374791F1746BA0040B541 = {
@@ -417,10 +446,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8D374741F1746BA0040B541 /* LaunchScreen.storyboard in Resources */,
+				E8F79A1A1F20464B006CD1F1 /* LPHomeRecommedCollectCell.xib in Resources */,
 				E8F79A121F1F58F5006CD1F1 /* LPRemmendAdCell.xib in Resources */,
 				E8F79A0E1F1E2E8F006CD1F1 /* LPImageTitleView.xib in Resources */,
 				E8D374711F1746BA0040B541 /* Assets.xcassets in Resources */,
 				E8D3746F1F1746BA0040B541 /* Main.storyboard in Resources */,
+				E8F79A161F1F868C006CD1F1 /* LPRecommendGoodCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,24 +525,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8D374B41F189B4E0040B541 /* WRProxy.swift in Sources */,
+				E8F79A191F20464B006CD1F1 /* LPHomeRecommedCollectCell.swift in Sources */,
 				E8F79A111F1F58F5006CD1F1 /* LPRemmendAdCell.swift in Sources */,
 				E8D374A41F1858990040B541 /* LPMessageViewController.swift in Sources */,
 				E8D374C41F18C84C0040B541 /* LPNetWorkManager.swift in Sources */,
 				E8D374B31F189B4E0040B541 /* WRCycleScrollView.swift in Sources */,
+				E8F79A151F1F868C006CD1F1 /* LPRecommendGoodCell.swift in Sources */,
 				E8D374B81F18A2690040B541 /* LPExtensionUIView.swift in Sources */,
+				E8F79A251F219F68006CD1F1 /* LPExtensionString.swift in Sources */,
 				E8D3749A1F1798E30040B541 /* LPTabBarViewController.swift in Sources */,
 				E8D374A21F1858890040B541 /* LPHomeViewController.swift in Sources */,
 				E8D3746A1F1746BA0040B541 /* AppDelegate.swift in Sources */,
 				E8F79A091F1DFF6F006CD1F1 /* LPHomeBrandCell.swift in Sources */,
 				E8D374B21F189B4E0040B541 /* WRCycleCell.swift in Sources */,
+				E8F79A1C1F204D1E006CD1F1 /* LPGoodListViewController.swift in Sources */,
 				E8D374C21F18B62B0040B541 /* LPExtensionLoadNetImage.swift in Sources */,
 				E8D374A01F1858580040B541 /* LPBaseViewController.swift in Sources */,
 				E8D374AC1F18632F0040B541 /* LPExtensionColor.swift in Sources */,
 				E8D374BA1F18A89D0040B541 /* LPMacro.swift in Sources */,
 				E8D374A61F1858A40040B541 /* LPOrderViewController.swift in Sources */,
 				E8D374B61F189FF80040B541 /* LPHomeAdView.swift in Sources */,
+				E8F79A1E1F208241006CD1F1 /* LPNavViewController.swift in Sources */,
 				E8F79A071F1C5F63006CD1F1 /* LPHomeModel.swift in Sources */,
 				E8F79A0C1F1E2E40006CD1F1 /* LPImageTitleView.swift in Sources */,
+				E8F79A221F219860006CD1F1 /* LPTestObject.m in Sources */,
 				E8D374A81F1858B10040B541 /* LPUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -667,10 +704,13 @@
 			baseConfigurationReference = 352E0C2BF2146203362263A3 /* Pods-swift519.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = swift519/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lipeng.swift519;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lipeng/Desktop/swift519/swift519/LPTools/swift519-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -680,10 +720,12 @@
 			baseConfigurationReference = 14B8839071AA49F9914BBB49 /* Pods-swift519.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = swift519/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lipeng.swift519;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lipeng/Desktop/swift519/swift519/LPTools/swift519-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

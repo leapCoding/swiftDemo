@@ -36,8 +36,12 @@ extension UIView {
         return nil
     }
     
+    class func stringName () -> String {
+        return NSStringFromClass(self).components(separatedBy: ".").last!
+    }
+    
     class func loadNib() -> UINib {
-        return loadNibNamed(nibName: NSStringFromClass(self).components(separatedBy: ".").last)
+        return loadNibNamed(nibName: stringName())
     }
     
     class func loadNibNamed(nibName: String!) -> UINib {

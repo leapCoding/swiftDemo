@@ -8,27 +8,13 @@
 
 import UIKit
 import Alamofire
-//import SwiftyJSON
 import HandyJSON
-
-public class LPNetModel : NSObject {
-    
-    public var paramers : [String:Any]?
-    public var url : String!
-    public var headers : HTTPHeaders?
-    
-    public init<T:HandyJSON>(para:[String:Any]?, data:T, urlString:String) {
-        super.init()
-        paramers = para
-        url = urlString
-        let header = ["Authorization":"Basic ","memberId":"","X-Message-Sender":"529MALL","FromAPP":"1","PlatformType":"2","AppVersion":"1.0.0"]
-        headers = header
-    }
-}
 
 public typealias ResultCallBack = (Bool,LPNetWorkResponse) -> ()
 
 public class LPNetWork : NSObject {
+    
+//    public var httpHeader : HTTPHeaders = [:]
     
     /**
      *  GET请求

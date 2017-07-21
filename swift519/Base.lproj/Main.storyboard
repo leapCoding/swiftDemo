@@ -140,7 +140,7 @@
         <!--首页-->
         <scene sceneID="QuJ-6w-EXj">
             <objects>
-                <navigationController extendedLayoutIncludesOpaqueBars="YES" navigationBarHidden="YES" id="r71-al-dvV" sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" id="r71-al-dvV" customClass="LPNavViewController" customModule="swift519" customModuleProvider="target" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="首页" image="icon_menuHome01" selectedImage="icon_menuHome02" id="Qee-du-NTv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="suE-uG-t8t">
@@ -164,12 +164,12 @@
                         <viewControllerLayoutGuide type="bottom" id="gXy-3H-SS8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UYm-Qt-qV7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="106" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JuI-5b-SU8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="106" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="JuI-5b-SU8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="separatorColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="YEH-lH-0tf">
@@ -186,7 +186,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LPHomeBrandCell" rowHeight="106" id="HmG-b4-pGE" customClass="LPHomeBrandCell" customModule="swift519" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="178" width="375" height="106"/>
+                                        <rect key="frame" x="0.0" y="205.5" width="375" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HmG-b4-pGE" id="i1j-ua-Hdz">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>

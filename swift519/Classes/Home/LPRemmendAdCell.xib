@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,7 +27,32 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jI-Nr-nu1">
                                 <rect key="frame" x="0.0" y="40" width="320" height="190.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1YR-HV-I4F">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="190.5"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gfM-aa-LhB">
+                                        <rect key="frame" x="160" y="0.0" width="160" height="95.5"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="khS-DB-dGW">
+                                        <rect key="frame" x="160" y="95" width="160" height="95.5"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="1YR-HV-I4F" firstAttribute="width" secondItem="6jI-Nr-nu1" secondAttribute="width" multiplier="1/2" id="2wG-Ue-w15"/>
+                                    <constraint firstItem="gfM-aa-LhB" firstAttribute="top" secondItem="6jI-Nr-nu1" secondAttribute="top" id="Bhe-fw-i4A"/>
+                                    <constraint firstAttribute="bottom" secondItem="1YR-HV-I4F" secondAttribute="bottom" id="DfR-Ux-r48"/>
+                                    <constraint firstAttribute="trailing" secondItem="khS-DB-dGW" secondAttribute="trailing" id="dnC-CI-ofu"/>
+                                    <constraint firstItem="khS-DB-dGW" firstAttribute="width" secondItem="gfM-aa-LhB" secondAttribute="width" id="dyN-dW-63V"/>
+                                    <constraint firstItem="gfM-aa-LhB" firstAttribute="width" secondItem="1YR-HV-I4F" secondAttribute="width" id="hAG-5x-dqF"/>
+                                    <constraint firstItem="gfM-aa-LhB" firstAttribute="height" secondItem="1YR-HV-I4F" secondAttribute="height" multiplier="1/2" id="hhZ-or-asH"/>
+                                    <constraint firstItem="1YR-HV-I4F" firstAttribute="leading" secondItem="6jI-Nr-nu1" secondAttribute="leading" id="jE1-jH-zq8"/>
+                                    <constraint firstItem="1YR-HV-I4F" firstAttribute="top" secondItem="6jI-Nr-nu1" secondAttribute="top" id="lfv-lj-tCH"/>
+                                    <constraint firstAttribute="bottom" secondItem="khS-DB-dGW" secondAttribute="bottom" id="tgw-fL-qQs"/>
+                                    <constraint firstItem="khS-DB-dGW" firstAttribute="height" secondItem="gfM-aa-LhB" secondAttribute="height" id="vrD-g6-rXc"/>
+                                    <constraint firstAttribute="trailing" secondItem="gfM-aa-LhB" secondAttribute="trailing" id="wZ8-wu-Cej"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

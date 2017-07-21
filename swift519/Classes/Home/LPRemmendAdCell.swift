@@ -18,6 +18,12 @@ class LPRemmendAdCell: UITableViewCell {
     
     func configData(home: LPHomeModel) {
         topImageView.setImage(home.characteristics, "")
+        if let ads = home.recommendAds {
+            for recommendAds in ads {
+                let imageview = viewWithTag(recommendAds.position+1) as! UIImageView
+                imageview.setImage(recommendAds.pic, "")
+            }
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

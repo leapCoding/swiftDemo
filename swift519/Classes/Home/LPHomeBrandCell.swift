@@ -30,9 +30,15 @@ class LPHomeBrandCell: UITableViewCell {
                 imageTitle.frame = CGRect(x: kScreenWidth/4*CGFloat(x), y: kScreenWidth/4*CGFloat(y), width: kScreenWidth/4, height: kScreenWidth/8 + 70)
                 imageTitle.config(images: value.pic!, titles: value.name!)
                 addSubview(imageTitle)
-                
+                let tap = UITapGestureRecognizer.init(target: self, action: #selector(itemTap))
+                imageTitle.addGestureRecognizer(tap)
             }
         }
+    }
+    
+    func itemTap() {
+        let goodList = LPGoodListViewController()
+        viewController()?.navigationController?.pushViewController(goodList, animated: true)
     }
     
     class func cellHeight(itmes:[HomeBrands]?) -> CGFloat {

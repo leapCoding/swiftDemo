@@ -10,9 +10,10 @@ import UIKit
 
 class LPUserViewController: LPBaseViewController {
 
+    @IBOutlet var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        textView.pl
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +22,13 @@ class LPUserViewController: LPBaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func textChange(_ sender: UITextField) {
+        print(sender.text ?? "")
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
     /*
     // MARK: - Navigation
 

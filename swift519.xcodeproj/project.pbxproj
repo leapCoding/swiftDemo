@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4D19E11F244C77001C3C19 /* LPExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4D19E01F244C77001C3C19 /* LPExtensionDate.swift */; };
 		86AB82C03BDE814C8EAA8A72 /* Pods_swift519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E95D66CAB31A0FB781A659 /* Pods_swift519.framework */; };
 		E8D3746A1F1746BA0040B541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D374691F1746BA0040B541 /* AppDelegate.swift */; };
 		E8D3746F1F1746BA0040B541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D3746D1F1746BA0040B541 /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C4D19E01F244C77001C3C19 /* LPExtensionDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPExtensionDate.swift; sourceTree = "<group>"; };
 		12E95D66CAB31A0FB781A659 /* Pods_swift519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B8839071AA49F9914BBB49 /* Pods-swift519.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift519.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift519/Pods-swift519.release.xcconfig"; sourceTree = "<group>"; };
 		352E0C2BF2146203362263A3 /* Pods-swift519.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift519.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift519/Pods-swift519.debug.xcconfig"; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				E8D374B71F18A2690040B541 /* LPExtensionUIView.swift */,
 				E8D374C11F18B62B0040B541 /* LPExtensionLoadNetImage.swift */,
 				E8F79A241F219F68006CD1F1 /* LPExtensionString.swift */,
+				0C4D19E01F244C77001C3C19 /* LPExtensionDate.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 				E8D374A61F1858A40040B541 /* LPOrderViewController.swift in Sources */,
 				E8D374B61F189FF80040B541 /* LPHomeAdView.swift in Sources */,
 				E8F79A1E1F208241006CD1F1 /* LPNavViewController.swift in Sources */,
+				0C4D19E11F244C77001C3C19 /* LPExtensionDate.swift in Sources */,
 				E8F79A071F1C5F63006CD1F1 /* LPHomeModel.swift in Sources */,
 				E8F79A0C1F1E2E40006CD1F1 /* LPImageTitleView.swift in Sources */,
 				E8F79A221F219860006CD1F1 /* LPTestObject.m in Sources */,
@@ -709,7 +713,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lipeng.swift519;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lipeng/Desktop/swift519/swift519/LPTools/swift519-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/swift519/LPTools/swift519-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -725,7 +729,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lipeng.swift519;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lipeng/Desktop/swift519/swift519/LPTools/swift519-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/swift519/LPTools/swift519-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
